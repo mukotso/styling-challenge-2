@@ -212,7 +212,8 @@ ul {
     display:grid;
     grid-template-columns:1fr ;
     height:342px;
-    background:linear-gradient(90deg,rgb(114,116,121), rgb(191,191,193));
+    //background:linear-gradient(90deg,rgb(114,116,121), rgb(191,191,193));
+    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/cytonn.jpeg)
   }
 .selectedWorkParagraph{
   font-size: 25px;
@@ -255,7 +256,7 @@ ul {
   }
   .share{
     margin-left: 240px;
-    margin-top: 67px;
+    margin-top: 87px;
     font-size:16px;
     color:$paragraph-color;
   }
@@ -269,16 +270,23 @@ ul {
     font-weight: bolder;
     font-size: 35px;
   }
+  i{
+    color:gainsboro;
+    opacity:0.2;
+    font-size:30px;
+    margin-bottom: -50px;
+  }
   #contentParagraph{
-    font-size:20px;
+    font-size:18px;
     color:$paragraph-color;
   }
   #customerMessage{
-    padding-top: pad(95px);
+    padding-top: pad(85px);
     background: rgb(92,150,103);
     padding-left: pad(152px);
     color:rgb(234,243,239);
     font-size:20px;
+    letter-spacing: 1px;
     line-height: 30px;
   }
   #dots{
@@ -288,8 +296,9 @@ ul {
     margin-left: 40%;
   }
   #customerName{
-    padding-top: 65px;
+    padding-top: 55px;
     color:white;
+    font-weight: bold;
   }
 }
 #contactUs{
@@ -305,14 +314,17 @@ ul {
 #ready{
   font-size:30px;
 }
-.btn{
+.btnContactUs{
   @include button;
-  background: transparent;
   color:green;
-  margin-left:20%;
-  padding: pad(-10px,-10px);
+  width:130px;
+  background: transparent;
+  height:35px;
+  margin-top:40px;
+  margin-left:80%;
   font-size:12px;
   border:2px solid green;
+  font-weight: bolder;
 }
 #footer{
   display:grid;
@@ -327,13 +339,13 @@ footer{
     padding-top: pad(80px);
   }
   h3{
+    color:rgb(100,103,107);
+    font-size:26px;
 
-    color:$paragraph-color;
-    font-size:30px;
   }
   p{
-
-    color:rgb(100,103,107);
+    line-height: 25px;
+    color:rgb(177,179,180);
   }
   #copyright{
     padding-top: pad(31px);

@@ -1,0 +1,276 @@
+body {
+  background-color: white;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif; }
+
+ul > li > i {
+  font-size: 50px;
+  font-weight: bolder; }
+
+#logo-wrapper {
+  display: flex; }
+  #logo-wrapper #companyName {
+    font-size: 35px;
+    font-weight: bolder;
+    color: white;
+    padding-left: 12px; }
+  #logo-wrapper #technology {
+    padding-left: 12px;
+    color: white;
+    color: #bfc2c5;
+    font-size: 14px; }
+
+#header {
+  background: url(../images/bg2.jpeg) no-repeat;
+  background-size: cover;
+  height: 901px; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  ul li {
+    margin-left: 56px;
+    font-size: 24px;
+    color: #bfc2c5; }
+    ul li i {
+      margin-left: 132px;
+      margin-right: 142px; }
+
+.design {
+  margin-top: 142px;
+  color: white;
+  font-size: 66px;
+  margin-bottom: 40px; }
+
+.introduction {
+  font-size: 22px;
+  color: #d1d4d7;
+  margin-top: 59px;
+  font-weight: bolder; }
+
+.container {
+  margin-left: 349px;
+  margin-right: 366px; }
+
+#hello {
+  margin-top: 428px;
+  font-size: 32px;
+  margin-left: 211px;
+  margin-bottom: 87px; }
+  #hello span {
+    margin-left: 102px; }
+
+.experience {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 76px; }
+  .experience #years {
+    padding-left: 0px;
+    margin-left: 0px;
+    font-size: 62px;
+    color: green;
+    margin-top: 64px; }
+  .experience span {
+    margin-left: 60px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #bfc2c5; }
+  .experience #experinceParagraph {
+    font-size: 25px;
+    line-height: 36px;
+    color: #64676b; }
+  .experience #solution {
+    margin-top: 50px;
+    margin-bottom: 50px; }
+  .experience #aboutUs {
+    color: green;
+    font-size: 20px;
+    font-weight: bold; }
+
+#expertiseHeading {
+  padding-top: 82px;
+  color: #bfc2c5; }
+
+.expertise-wrapper {
+  background-color: #f5f6f8; }
+
+#expertise {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 67px;
+  grid-gap: 62px; }
+  #expertise h2 {
+    font-size: 30px; }
+  #expertise #bsa {
+    background: url("../images/bsa.jpeg");
+    background-size: cover;
+    height: 360px;
+    border-bottom: 30px solid green;
+    color: white;
+    padding: 20px; }
+  #expertise .card {
+    height: 435px;
+    padding-bottom: 117px; }
+  #expertise p {
+    font-size: 25px;
+    color: #bfc2c5; }
+  #expertise hr {
+    margin-top: 115px;
+    border-bottom: 10px solid green; }
+  #expertise .fa {
+    font-size: 80px;
+    height: 130px; }
+
+#selectedWork #SelectedWorkTitle {
+  font-size: 30px;
+  margin-top: 95px;
+  margin-bottom: 44px; }
+
+#selectedWork #card1 {
+  background: linear-gradient(90deg, #7f4b22, #d76a19); }
+
+#selectedWork .selectedWorkName {
+  margin: 38px; }
+
+#selectedWork #electiveAfrica {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 38px;
+  height: 342px; }
+
+#selectedWork #mmc {
+  height: 342px;
+  background: url("../images/mmc.jpeg"); }
+
+#selectedWork #cytonn {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 342px;
+  background: linear-gradient(90deg, #727479, #bfbfc1); }
+
+#selectedWork .selectedWorkParagraph {
+  font-size: 25px;
+  margin-left: 38px;
+  color: white; }
+
+#blogWrapper {
+  background-color: #f5f6f8; }
+  #blogWrapper h2 {
+    padding-top: 55px;
+    padding-bottom: 35px; }
+  #blogWrapper #blog {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 38px;
+    height: 342px;
+    padding-bottom: 72px; }
+  #blogWrapper .card {
+    background-color: white;
+    padding: 25px; }
+  #blogWrapper .blogHeader {
+    font-size: 16px;
+    margin-bottom: 51px; }
+  #blogWrapper p {
+    font-size: 25px;
+    font-weight: bold; }
+  #blogWrapper #first {
+    color: green; }
+  #blogWrapper .date {
+    font-size: 16px;
+    color: #64676b; }
+  #blogWrapper .share {
+    margin-left: 276px;
+    margin-top: 67px;
+    font-size: 16px;
+    color: #64676b; }
+
+#customer-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  #customer-wrapper h1 {
+    margin-top: 120px;
+    margin-bottom: 44px;
+    font-weight: bolder;
+    font-size: 35px; }
+  #customer-wrapper #contentParagraph {
+    font-size: 20px;
+    color: #64676b; }
+  #customer-wrapper #customerMessage {
+    padding-top: 95px;
+    background: #5c9667;
+    padding-left: 152px;
+    color: white;
+    font-size: 24px;
+    line-height: 30px; }
+  #customer-wrapper #customerName {
+    padding-top: 65px; }
+
+#contactUs {
+  padding-bottom: 92px;
+  padding-top: 92px;
+  background-color: #f5f6f8; }
+
+#contactUsContent {
+  display: grid;
+  grid-template-columns: 2fr 1fr; }
+
+#ready {
+  font-size: 30px; }
+
+.btn {
+  color: #64676b;
+  border: 2px solid;
+  border-radius: 50px; }
+
+#footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+footer {
+  background: #282c33;
+  padding-bottom: 1px; }
+  footer #updates {
+    padding-top: 80px; }
+  footer h3 {
+    color: #64676b;
+    font-size: 30px; }
+  footer p {
+    color: #64676b; }
+  footer #copyright {
+    padding-top: 31px;
+    padding-bottom: 51px; }
+  footer #icons {
+    padding-top: 80px;
+    padding-bottom: 35px; }
+  footer #email {
+    padding-top: 120px; }
+  footer input {
+    border: none;
+    border-bottom: 1px solid; }
+
+#signupBtn {
+  color: white;
+  border-radius: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin: 29px;
+  background: #5d9968; }
+
+a {
+  text-decoration: none; }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 60px;
+  margin-left: 340px; }
+
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px; }

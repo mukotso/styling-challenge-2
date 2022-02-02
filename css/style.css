@@ -4,6 +4,46 @@ body {
   padding: 0px;
   font-family: sans-serif; }
 
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  header .logo a {
+    display: none; }
+
+header .show {
+  display: block; }
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 60px;
+  margin-left: 340px; }
+  @media only screen and (min-width: 280px) and (max-width: 780px) {
+    nav {
+      margin-left: 30px; }
+      nav .logo a {
+        display: block; }
+      nav .ul {
+        display: none; } }
+  nav li {
+    display: inline-block;
+    list-style: none;
+    color: #bfc2c5; }
+    nav li i {
+      margin-left: 132px;
+      margin-right: 102px; }
+    @media only screen and (min-width: 280px) and (max-width: 780px) {
+      nav li {
+        display: none; } }
+  nav a {
+    color: #bfc2c5;
+    text-decoration: none;
+    margin-left: 46px;
+    font-size: 20px;
+    font-weight: bolder; }
+
 @media only screen and (min-width: 280px) and (max-width: 780px) {
   main, #header {
     padding-left: 20px;
@@ -17,29 +57,20 @@ ul > li > i {
 #header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/bg2.jpeg);
   background-size: cover;
-  height: 90vh; }
+  height: 87vh; }
   @media only screen and (min-width: 280px) and (max-width: 780px) {
     #header {
       width: 100%;
       height: 100vh; } }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
-  ul li {
-    margin-left: 56px;
-    font-size: 24px;
-    color: #bfc2c5; }
-    ul li i {
-      margin-left: 132px;
-      margin-right: 142px; }
-
 .design {
   margin-top: 142px;
   color: white;
-  font-size: 66px;
-  margin-bottom: 40px; }
+  font-size: 76px;
+  font-family: Serif;
+  margin-bottom: -55px; }
+  .design span {
+    color: #5d9868; }
   @media only screen and (min-width: 280px) and (max-width: 780px) {
     .design {
       margin-left: 10px;
@@ -48,7 +79,7 @@ ul {
 .introduction {
   font-size: 20px;
   color: #d1d4d7;
-  margin-top: 59px;
+  margin-top: 69px;
   font-weight: bolder; }
   @media only screen and (min-width: 280px) and (max-width: 780px) {
     .introduction {
@@ -67,10 +98,12 @@ ul {
       margin-right: 5px; } }
 
 #hello {
-  margin-top: 348px;
-  font-size: 32px;
-  margin-left: 211px;
-  margin-bottom: 87px; }
+  margin-top: 415px;
+  font-size: 35px;
+  margin-left: 611px;
+  margin-bottom: 87px;
+  font-family: Serif;
+  align-self: center; }
   @media only screen and (min-width: 280px) and (max-width: 780px) {
     #hello {
       width: 100%;
@@ -93,28 +126,29 @@ ul {
     padding-left: 0px;
     margin-left: 0px;
     font-size: 62px;
-    color: green;
-    margin-top: 64px; }
+    color: #5e9968;
+    margin-top: 64px;
+    font-weight: lighter; }
   .experience span {
-    margin-left: 60px;
-    font-weight: bold;
+    margin-left: 80px;
+    font-weight: bolder;
     font-size: 16px;
-    color: #bfc2c5; }
+    color: #71747a; }
   .experience #experinceParagraph {
     font-size: 25px;
     line-height: 36px;
-    color: #3e4c48; }
+    color: #54585d; }
   .experience #solution {
     margin-top: 50px;
     margin-bottom: 50px; }
   .experience #aboutUs {
-    color: green;
-    font-size: 20px;
-    font-weight: bold; }
+    color: #76ab83;
+    font-size: 18px;
+    font-weight: lighter; }
 
 #expertiseHeading {
   padding-top: 82px;
-  color: #f5f6f8; }
+  color: #a7a8b1; }
 
 .expertise-wrapper {
   background-color: #f5f6f8; }
@@ -141,12 +175,14 @@ ul {
     border-bottom: 30px solid green;
     color: white;
     padding: 20px; }
+  #expertise #paragraphBsa {
+    color: #ffff; }
   #expertise .card {
     height: 435px;
     padding-bottom: 117px; }
   #expertise p {
     font-size: 25px;
-    color: #bfc2c5; }
+    color: #909197; }
   #expertise hr {
     margin-top: 115px;
     border-bottom: 10px solid green; }
@@ -157,51 +193,58 @@ ul {
       #expertise .fa {
         margin-left: 40%; } }
 
-#selectedWork #SelectedWorkTitle {
-  font-size: 24px;
-  font-weight: bolder;
-  margin-top: 95px;
-  margin-bottom: 44px;
-  color: #bfc2c5; }
-
-#selectedWork #card1 {
-  background: linear-gradient(90deg, #7f4b22, #d76a19); }
-  @media only screen and (min-width: 280px) and (max-width: 780px) {
-    #selectedWork #card1 {
-      margin-bottom: 18px; } }
-
-#selectedWork .selectedWorkName {
-  margin: 38px; }
-
-#selectedWork #electiveAfrica {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 38px;
-  height: 342px; }
-  @media only screen and (min-width: 280px) and (max-width: 780px) {
-    #selectedWork #electiveAfrica {
-      grid-template-columns: 1fr;
-      margin-bottom: 18px; } }
-
-#selectedWork #mmc {
-  height: 342px;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/mmc.jpeg);
-  background-size: cover; }
-
-#selectedWork #cytonn {
-  display: grid;
-  grid-template-columns: 1fr;
-  height: 342px;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/cytonn.jpeg); }
-  @media only screen and (min-width: 280px) and (max-width: 780px) {
-    #selectedWork #cytonn {
-      grid-template-columns: 1fr;
-      margin-top: 30px; } }
-
-#selectedWork .selectedWorkParagraph {
-  font-size: 25px;
-  margin-left: 38px;
-  color: white; }
+#selectedWork {
+  padding-bottom: 130px; }
+  #selectedWork #SelectedWorkTitle {
+    font-size: 24px;
+    font-weight: bolder;
+    margin-top: 95px;
+    margin-bottom: 44px;
+    color: #bfc2c5; }
+  #selectedWork #card1 {
+    background: linear-gradient(90deg, #7f4b22, #d76a19); }
+    @media only screen and (min-width: 280px) and (max-width: 780px) {
+      #selectedWork #card1 {
+        margin-bottom: 18px; } }
+  #selectedWork .selectedWorkName {
+    margin: 38px; }
+  #selectedWork #electiveAfrica {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 38px;
+    height: 342px;
+    margin-bottom: 35px; }
+    @media only screen and (min-width: 280px) and (max-width: 780px) {
+      #selectedWork #electiveAfrica {
+        grid-template-columns: 1fr;
+        margin-bottom: 18px; } }
+  #selectedWork #mmc {
+    height: 342px;
+    background: linear-gradient(90deg, #727479, #bfbfc1);
+    background-size: cover; }
+  #selectedWork #cytonn {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 342px;
+    background: linear-gradient(90deg, #727479, #bfbfc1); }
+    @media only screen and (min-width: 280px) and (max-width: 780px) {
+      #selectedWork #cytonn {
+        grid-template-columns: 1fr;
+        margin-top: 30px; } }
+    #selectedWork #cytonn .selectedWorkName {
+      margin-bottom: 0px;
+      color: white;
+      font-weight: lighter; }
+    #selectedWork #cytonn .selectedWorkParagraph {
+      font-size: 35px;
+      margin-left: 38px;
+      margin-top: -30px;
+      color: white;
+      font-family: sans-serif; }
+  #selectedWork .selectedWorkParagraph {
+    font-size: 25px;
+    margin-left: 38px;
+    color: white; }
 
 #blogWrapper {
   background-color: #f5f6f8; }
@@ -380,23 +423,3 @@ footer {
 
 a {
   text-decoration: none; }
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 60px;
-  margin-left: 340px; }
-  @media only screen and (min-width: 280px) and (max-width: 780px) {
-    .navbar {
-      margin-left: 30px; }
-      .navbar .nav-links {
-        display: none; } }
-
-.menu {
-  display: flex;
-  gap: 1em;
-  font-size: 18px; }
-  @media only screen and (min-width: 280px) and (max-width: 780px) {
-    .menu {
-      display: none; } }

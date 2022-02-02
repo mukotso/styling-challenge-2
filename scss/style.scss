@@ -181,7 +181,7 @@ nav {
     align-self: center;
     @media only screen and (min-width: 280px) and (max-width: 780px) {
       width: 100%;
-      margin-top: 80px;
+      margin-top: 150px;
       font-size: 32px;
       margin-left: 11px;
       margin-bottom: 7px;
@@ -342,6 +342,10 @@ nav {
       //background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(../images/mmc.jpeg);
       background:linear-gradient(90deg,rgb(114,116,121), rgb(191,191,193));
       background-size: cover;
+      @media only screen and (min-width: 280px) and (max-width: 780px) {
+
+        display:none;
+      }
     }
 
     #cytonn {
@@ -353,6 +357,7 @@ nav {
       @media only screen and (min-width: 280px) and (max-width: 780px) {
         grid-template-columns:1fr;
         margin-top: 30px;
+        display:none;
       }
       .selectedWorkName {
         margin-bottom: 0px;
@@ -399,6 +404,7 @@ nav {
     .card {
       background-color: $default-color;
       padding: 25px;
+      padding-bottom: 0px;
     }
 
     .hide {
@@ -410,25 +416,28 @@ nav {
     .blogHeader {
       font-size: 16px;
       margin-bottom: 51px;
+      color:rgb(174,174,177);
+      font-weight: lighter;
     }
 
     p {
-      font-size: 25px;
+      font-size: 28px;
       font-weight: bold;
+      color:rgb(42,46,53);
     }
 
     #first {
-      color: green;
+      color: rgb(93,152,104);
     }
 
     .date {
-      font-size: 16px;
-      color: $paragraph-color;
+      font-size: 14px;
+      color: rgb(173,173,176);
     }
 
     .share {
       margin-left: 240px;
-      margin-top: 87px;
+      margin-top: 25%;
       font-size: 16px;
       color: $paragraph-color;
     }
@@ -447,7 +456,6 @@ nav {
       font-weight: bolder;
       font-size: 35px;
     }
-
     i {
       color: gainsboro;
       opacity: 0.2;
@@ -459,7 +467,6 @@ nav {
       font-size: 18px;
       color: $paragraph-color;
     }
-
     #customerMessage {
       padding-top: pad(85px);
       background: rgb(92, 150, 103);

@@ -107,7 +107,7 @@ ul > li > i {
   @media only screen and (min-width: 280px) and (max-width: 780px) {
     #hello {
       width: 100%;
-      margin-top: 80px;
+      margin-top: 150px;
       font-size: 32px;
       margin-left: 11px;
       margin-bottom: 7px; } }
@@ -222,6 +222,9 @@ ul > li > i {
     height: 342px;
     background: linear-gradient(90deg, #727479, #bfbfc1);
     background-size: cover; }
+    @media only screen and (min-width: 280px) and (max-width: 780px) {
+      #selectedWork #mmc {
+        display: none; } }
   #selectedWork #cytonn {
     display: grid;
     grid-template-columns: 1fr;
@@ -230,7 +233,8 @@ ul > li > i {
     @media only screen and (min-width: 280px) and (max-width: 780px) {
       #selectedWork #cytonn {
         grid-template-columns: 1fr;
-        margin-top: 30px; } }
+        margin-top: 30px;
+        display: none; } }
     #selectedWork #cytonn .selectedWorkName {
       margin-bottom: 0px;
       color: white;
@@ -262,24 +266,28 @@ ul > li > i {
         grid-template-columns: 1fr; } }
   #blogWrapper .card {
     background-color: white;
-    padding: 25px; }
+    padding: 25px;
+    padding-bottom: 0px; }
   @media only screen and (min-width: 280px) and (max-width: 780px) {
     #blogWrapper .hide {
       display: none; } }
   #blogWrapper .blogHeader {
     font-size: 16px;
-    margin-bottom: 51px; }
+    margin-bottom: 51px;
+    color: #aeaeb1;
+    font-weight: lighter; }
   #blogWrapper p {
-    font-size: 25px;
-    font-weight: bold; }
+    font-size: 28px;
+    font-weight: bold;
+    color: #2a2e35; }
   #blogWrapper #first {
-    color: green; }
+    color: #5d9868; }
   #blogWrapper .date {
-    font-size: 16px;
-    color: #bfc2c5; }
+    font-size: 14px;
+    color: #adadb0; }
   #blogWrapper .share {
     margin-left: 240px;
-    margin-top: 87px;
+    margin-top: 25%;
     font-size: 16px;
     color: #bfc2c5; }
 

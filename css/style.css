@@ -98,16 +98,17 @@ ul > li > i {
       margin-right: 5px; } }
 
 #hello {
-  margin-top: 415px;
+  margin-top: 5%;
   font-size: 35px;
   margin-left: 611px;
   margin-bottom: 87px;
   font-family: Serif;
-  align-self: center; }
+  align-self: center;
+  word-break: break-word; }
   @media only screen and (min-width: 280px) and (max-width: 780px) {
     #hello {
       width: 100%;
-      margin-top: 150px;
+      margin-top: 20%;
       font-size: 32px;
       margin-left: 11px;
       margin-bottom: 7px; } }
@@ -301,14 +302,19 @@ ul > li > i {
     margin-top: 120px;
     margin-bottom: 44px;
     font-weight: bolder;
-    font-size: 35px; }
+    font-size: 35px;
+    margin-right: -60px;
+    margin-left: 379px; }
   #customer-wrapper i {
     color: gainsboro;
     opacity: 0.2;
     font-size: 30px;
     margin-bottom: -50px; }
   #customer-wrapper #contentParagraph {
-    font-size: 18px;
+    margin-left: 379px;
+    margin-right: 99px;
+    font-size: 26px;
+    line-height: 34px;
     color: #bfc2c5; }
   #customer-wrapper #customerMessage {
     padding-top: 85px;
@@ -324,12 +330,13 @@ ul > li > i {
   #customer-wrapper #dots {
     color: #bfc2c5;
     font-size: 60px;
-    border-radius: 50%;
+    border-radius: 50% !important;
     margin-left: 40%; }
   #customer-wrapper #customerName {
     padding-top: 55px;
     color: white;
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 14px; }
 
 #contactUs {
   padding-bottom: 92px;

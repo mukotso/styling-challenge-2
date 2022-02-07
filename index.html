@@ -8,7 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<div id="header">
+<div id="header" >
 
 <!--    <nav class="navbar">-->
         <!-- LOGO -->
@@ -32,7 +32,7 @@
         <header>
             <nav class="navbar">
                 <div class="logo">
-                    <img src="./images/logo.png" alt=" cytonn Logo" height="65px" width="195px">
+                    <img src="./images/cytonnlogo.png" alt=" cytonn Logo" height="65px" width="195px">
                        <a href="#" onclick="toggleMenu()"><i class="fa fa-bars fa-2x"></i></a>
                 </div>
                 <ul id="nav-list">
@@ -61,10 +61,11 @@
             </div>
 
 </div>
+</div>
         <main>
 
-                <p id="hello"class="container">Hello! we're A Creative Team in Nairobi That Focuses<br>
-                    <span>On Design,Development & IT Solutions.</span></p>
+                <p id="hello"class="container">Hello! we're A Creative Team in Nairobi That Focuses On Design,Development & IT Solutions.</p>
+
 
 
 
@@ -186,7 +187,7 @@
             <p class="blogHeader">LIFESTYLE</p>
             <p id="first">Are You Spending Your
                 Time Wisely?<br>
-                <span class="date">10 March 2018</span></p>
+                <span class="date">30 March 2018</span></p>
             <br>
             <p class="share">Share <i class="fa fa-share-alt"></i></p>
         </div>
@@ -198,7 +199,7 @@
                 Remotely<br>
             <span class="date">14 March 2018</span>
             </p>
-            <p class="share">Share <i class="fa fa-share-alt"></i></p>
+            <p  class="share">Share <i class="fa fa-share-alt"></i></p>
 
         </div>
 
@@ -216,10 +217,10 @@
 
 <div id="customer-wrapper">
 
-    <div class="container">
+    <div>
         <h1>CUSTOMER <br>
             SAYS</h1>
-        <p id="contentParagraph">We design solutions for digital<br>
+        <p id="contentParagraph">We design solutions for digital
             interactions</p>
     </div>
 
@@ -284,5 +285,12 @@
     </div>
 
 </footer>
+
+<script>
+    function toggleMenu() {
+        let navList = document.getElementById('nav-list');
+        navList.classList.toggle('show')
+    }
+</script>
 </body>
 </html>

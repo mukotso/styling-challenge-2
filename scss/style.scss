@@ -56,6 +56,8 @@ header {
     justify-content: space-between;
 
     a {
+
+      margin-left: 40%;
       display: none;
     }
   }
@@ -71,7 +73,7 @@ nav {
   justify-content: space-between;
   padding-top: pad(60px);
   margin-left: 340px;
-  @media only screen and (min-width: 280px) and (max-width: 780px) {
+  @media only screen and (min-width: 280px) and (max-width: 1400px) {
     margin-left: 30px;
     .logo{
       a{
@@ -93,7 +95,7 @@ nav {
       margin-left: 132px;
       margin-right: 102px;
     }
-    @media only screen and (min-width: 280px) and (max-width: 780px) {
+    @media only screen and (min-width: 280px) and (max-width: 1200px) {
       display: none;
     }
 
@@ -118,6 +120,12 @@ main, #header {
     padding-right: 20px;
     margin: 0px;
   }
+
+  @media only screen and (min-width: 781px) and (max-width: 1400px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0px;
+  }
 }
 
 ul > li > i {
@@ -130,19 +138,34 @@ ul > li > i {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/bg2.jpeg);
   background-size: cover;
   height: 87vh;
-  @media only screen and (min-width: 280px) and (max-width: 780px) {
-    width: 100%;
-    height: 100vh;
-  }
+  width: 100%;
 
 }
-
 .design {
-  margin-top: 142px;
-  color: $default-color;
-  font-size: 76px;
+
   font-family: Serif;
-  margin-bottom: -55px;
+  p{
+    margin-block-end: 0px;
+    margin-top: 11%;
+    margin-bottom: 4%;
+    color: $default-color;
+    font-size: 126px;
+    font-weight: bold;
+    word-break: break-word;
+    @media only screen and (min-width: 581px) and (max-width: 780px) {
+
+      margin-top: 15%;
+      margin-bottom: 17%;
+      font-size: 86px;
+    }
+
+    @media only screen and (min-width: 280px) and (max-width: 580px) {
+
+      margin-top: 15%;
+      margin-bottom: 7%;
+      font-size: 66px;
+    }
+}
   span{
     color:rgb(93,152,104);
   }
@@ -162,8 +185,8 @@ ul > li > i {
   }
 }
 .container {
-  margin-left: 349px;
-  margin-right: 366px;
+  margin-left: 15%;
+  margin-right: 15%;
 
   @media only screen and (min-width: 781px) and (max-width: 999px) {
     margin-left: 5px;
@@ -176,18 +199,16 @@ ul > li > i {
 }
 #hello {
   margin-top: 5%;
-  font-size: 35px;
-  margin-left: 611px;
+  font-size: 42px;
+  margin-left: 30%;
+  margin-right: 20%;
   margin-bottom: 87px;
   font-family: Serif;
-  align-self: center;
-  word-break: break-word;
+  text-align: center;
+  font-weight: lighter;
   @media only screen and (min-width: 280px) and (max-width: 780px) {
-    width: 100%;
-    margin-top: 20%;
-    font-size: 32px;
-    margin-left: 11px;
-    margin-bottom: 7px;
+    margin-left: 20%;
+    margin-right: 10%;
   }
 
   span {
@@ -200,9 +221,10 @@ ul > li > i {
 .experience {
   display: grid;
   grid-template-columns:1fr 2fr;
-  @media only screen and (min-width: 280px) and (max-width: 780px) {
-    margin-top: 60px;
-    grid-template-columns:1fr;
+  @media only screen and (min-width: 280px) and (max-width: 1000px) {
+
+    display: block;
+    margin: 5%;
   }
   margin-bottom: 76px;
 
@@ -254,18 +276,22 @@ ul > li > i {
 #expertise {
   display: grid;
   grid-template-columns:1fr 1fr 1fr;
-  @media only screen and (min-width: 280px) and (max-width: 780px) {
-    margin-top: 40px;
-    grid-template-columns:1fr;
+  @media only screen and (min-width: 280px) and (max-width: 1000px) {
+    display: block;
     margin: 10px;
+    padding: 5%;
   }
   margin-top: 67px;
   grid-gap: 62px;
 
   h2 {
     font-size: 30px;
-    @media only screen and (min-width: 280px) and (max-width: 780px) {
+    @media only screen and (min-width: 280px) and (max-width: 1000px) {
       text-align: center;
+      .icon{
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 
@@ -299,7 +325,8 @@ ul > li > i {
   .fa {
     font-size: 80px;
     height: 130px;
-    @media only screen and (min-width: 280px) and (max-width: 780px) {
+    align-content: center;
+    @media only screen and (min-width: 280px) and (max-width: 1000px) {
       margin-left: 40%;
     }
   }
@@ -307,6 +334,9 @@ ul > li > i {
 
 #selectedWork {
   padding-bottom: 130px;
+  @media only screen and (min-width: 280px) and (max-width: 1000px) {
+    padding-bottom: 20px;
+  }
   #SelectedWorkTitle {
     font-size: 24px;
     font-weight: bolder;
@@ -317,7 +347,7 @@ ul > li > i {
 
   #card1 {
     background: linear-gradient(90deg, rgb(127, 75, 34), rgb(215, 106, 25));
-    @media only screen and (min-width: 280px) and (max-width: 780px) {
+    @media only screen and (min-width: 280px) and (max-width: 1000px) {
       margin-bottom: 18px;
     }
 
@@ -330,9 +360,19 @@ ul > li > i {
   #electiveAfrica {
     display: grid;
     grid-template-columns:1fr 1fr;
-    @media only screen and (min-width: 280px) and (max-width: 780px) {
+    @media only screen and (min-width: 280px) and (max-width: 1000px) {
       grid-template-columns:1fr;
-      margin-bottom: 18px;
+     margin-left: 7%;
+      margin-right: 7%;
+      grid-gap: 8px;
+      #scroll{
+        display: block;
+        font-size:90px;
+        margin-top: -20%;
+        text-align: center;
+        border-radius: 50%;
+        color:$paragraph-color;
+      }
     }
     grid-gap: 38px;
     height: 342px;
@@ -342,10 +382,9 @@ ul > li > i {
 
   #mmc {
     height: 342px;
-    //background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(../images/mmc.jpeg);
     background:linear-gradient(90deg,rgb(114,116,121), rgb(191,191,193));
     background-size: cover;
-    @media only screen and (min-width: 280px) and (max-width: 780px) {
+    @media only screen and (min-width: 280px) and (max-width: 1000px) {
 
       display:none;
     }
@@ -357,7 +396,7 @@ ul > li > i {
     height: 342px;
     background:linear-gradient(90deg,rgb(114,116,121), rgb(191,191,193));
     //background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/cytonn.jpeg);
-    @media only screen and (min-width: 280px) and (max-width: 780px) {
+    @media only screen and (min-width: 280px) and (max-width: 1000px) {
       grid-template-columns:1fr;
       margin-top: 30px;
       display:none;
@@ -387,7 +426,11 @@ ul > li > i {
 
 #blogWrapper {
   background-color: $primary-color;
-
+  @media only screen and (min-width: 280px) and (max-width: 1000px) {
+    .container{
+      margin: -3%;
+    }
+  }
   h2 {
     padding-top: 55px;
     padding-bottom: 35px;
@@ -396,8 +439,13 @@ ul > li > i {
   #blog {
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
-    @media only screen and (min-width: 280px) and (max-width: 780px) {
+    @media only screen and (min-width: 280px) and (max-width: 1000px) {
       grid-template-columns:1fr;
+      overflow-x: auto;
+    }
+    @media only screen and (min-width: 1000px) and (max-width: 1300px) {
+      grid-template-columns:1fr  1fr;
+      overflow-x: auto;
     }
     grid-gap: 38px;
     height: 342px;
@@ -411,7 +459,7 @@ ul > li > i {
   }
 
   .hide {
-    @media only screen and (min-width: 280px) and (max-width: 780px) {
+    @media only screen and (min-width: 280px) and (max-width: 1000px) {
       display: none;
     }
   }
@@ -449,10 +497,14 @@ ul > li > i {
 #customer-wrapper {
   display: grid;
   grid-template-columns:1fr 1fr;
-  @media only screen and (min-width: 280px) and (max-width: 780px) {
-    grid-template-columns:1fr;
+  @media only screen and (min-width: 280px) and (max-width: 1000px) {
+    display:block;
+    margin: 10%;
   }
-
+  @media only screen and (min-width: 1000px) and (max-width: 1500px) {
+    grid-template-columns:1fr 1fr;
+    margin: 5%;
+  }
   h1 {
     margin-top: 120px;
     margin-bottom: 44px;
@@ -460,6 +512,14 @@ ul > li > i {
     font-size: 35px;
     margin-right: -60px;
     margin-left: 379px;
+    @media only screen and (min-width: 280px) and (max-width: 1000px) {
+      margin-left: 39px;
+      margin-right: 59px;
+    }
+
+    @media only screen and (min-width: 1000px) and (max-width: 1500px) {
+      margin-left: 10px;
+    }
   }
   i {
     color: gainsboro;
@@ -474,6 +534,13 @@ ul > li > i {
     font-size: 26px;
     line-height:34px;
     color: $paragraph-color;
+    @media only screen and (min-width: 280px) and (max-width: 1000px) {
+      margin-left: 39px;
+      margin-right: 59px;
+    }
+    @media only screen and (min-width: 1000px) and (max-width: 1500px) {
+      margin-left: 10px;
+    }
   }
   #customerMessage {
     padding-top: pad(85px);
@@ -484,7 +551,7 @@ ul > li > i {
     letter-spacing: 1px;
     line-height: 30px;
 
-    @media only screen and (min-width: 280px) and (max-width: 780px) {
+    @media only screen and (min-width: 280px) and (max-width: 1000px) {
       padding-left: pad(42px);
     }
 
@@ -516,7 +583,7 @@ ul > li > i {
 #contactUsContent {
   display: grid;
   grid-template-columns:2fr 1fr;
-  @media only screen and (min-width: 280px) and (max-width: 780px) {
+  @media only screen and (min-width: 280px) and (max-width: 1000px) {
     grid-template-columns:1fr;
   }
 
@@ -537,7 +604,7 @@ ul > li > i {
   font-size: 12px;
   border: 2px solid green;
   font-weight: bolder;
-  @media only screen and (min-width: 280px) and (max-width: 780px) {
+  @media only screen and (min-width: 280px) and (max-width: 1000px) {
 
     margin-top: 20px;
     margin-left: 30%;
@@ -551,7 +618,7 @@ ul > li > i {
 #footer {
   display: grid;
   grid-template-columns:1fr 1fr;
-  @media only screen and (min-width: 280px) and (max-width: 780px) {
+  @media only screen and (min-width: 280px) and (max-width: 1000px) {
     grid-template-columns:1fr;
     text-align: center;
   }
@@ -584,14 +651,14 @@ footer {
 
   #icons {
     padding-top: pad(60px);
-    padding-bottom: pad(25px);
+    padding-bottom: pad(15px);
     font-size: 20px;
 
     i {
       margin-left: 20px;
     }
 
-    @media only screen and (min-width: 280px) and (max-width: 780px) {
+    @media only screen and (min-width: 280px) and (max-width: 1000px) {
       padding-top: pad(5px);
       padding-bottom: pad(5px);
     }
@@ -604,7 +671,7 @@ footer {
 
   #email {
     padding-top: pad(120px);
-    @media only screen and (min-width: 280px) and (max-width: 780px) {
+    @media only screen and (min-width: 280px) and (max-width: 1000px) {
       padding-top: pad(15px);
     }
   }
